@@ -11,11 +11,11 @@
     <div ng-controller='Hoth'>
       <h1>Pets! Pets! Pets!</h1>
         <p>Enter information about pet:</p>
-        <input type="text" placeholder='Name of Pet'></input>
-        <input type="text" placeholder='Type (i.e. dog, cat, etc)'></input>
-        <input type="number" placeholder='Age'></input>
-        <input type="text" placeholder='Image URL of Pet'></input>
-        <button>Submit Pet Info</button>
+        <input type="text" placeholder='Name of Pet' ng-model='petName'></input>
+        <input type="text" placeholder='Type (i.e. dog, cat, etc)' ng-model='petType'></input>
+        <input type="number" placeholder='Age'ng-model='petAge'></input>
+        <input type="text" placeholder='Image URL of Pet' ng-model='petImg'></input>
+        <button ng-click='submit()'>Submit Pet Info</button>
     </div>
   </body>
 </html>
