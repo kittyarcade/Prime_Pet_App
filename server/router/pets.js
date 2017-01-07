@@ -5,8 +5,8 @@ var User = require('../models/newPet');
 
 router.post('/', function(req, res){
   var info = req.body;
-  console.log('Object:', info);
-  var postPet = new User({
+  console.log('Post route hit:', req.body);
+  var postPet = new User ({
     Name: info.Name,
     Animal: info.Animal,
     Age: info.Age,
