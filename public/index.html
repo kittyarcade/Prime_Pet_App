@@ -18,6 +18,9 @@
         <button ng-click='submit()'>Submit Pet Info</button>
         <div ng-repeat ='pet in collection'>
           <p>{{pet.Name}}</p>
+          <p>{{pet.Type}}</p>
+          <p>{{pet.Age}}</p>
+          <p><img ng-src="{{pet.Image}}"/>
         </div>
     </div>
   </body>
