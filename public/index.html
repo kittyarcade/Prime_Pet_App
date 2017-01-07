@@ -16,6 +16,9 @@
         <input type="number" placeholder='Age'ng-model='petAge'></input>
         <input type="text" placeholder='Image URL of Pet' ng-model='petImg'></input>
         <button ng-click='submit()'>Submit Pet Info</button>
+        <div ng-repeat ='pet in collection'>
+          <p>{{pet.Name}}</p>
+        </div>
     </div>
   </body>
 </html>
