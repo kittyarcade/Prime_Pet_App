@@ -1,6 +1,6 @@
 console.log('meow.js');
 
-var myApp = angular.module('myApp', []);
+var myApp = angular.module('myApp', ['ngMaterial']);
 
 myApp.controller('Hoth', ['$scope', '$http', function($scope, $http){
   console.log('totally angular dude');
