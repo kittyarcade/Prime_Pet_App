@@ -4,11 +4,17 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="vendors/angular.min.js"></script>
     <script type="text/javascript" src="scripts/client.js"></script>
-    <title>Pets of Tau</title>
+    <title>Pets App</title>
   </head>
   <body ng-app='myApp'>
     <div ng-controller='Hoth'>
-      <h1>Pets of Tau</h1>
+      <h1>Pets! Pets! Pets!</h1>
+        <p>Enter information about pet:</p>
+        <input type="text" placeholder='Name of Pet'></input>
+        <input type="text" placeholder='Type (i.e. dog, cat, etc)'></input>
+        <input type="number" placeholder='Age'></input>
+        <input type="text" placeholder='Image URL of Pet'></input>
+        <button>Submit Pet Info</button>
     </div>
   </body>
 </html>
