@@ -9,9 +9,11 @@ app.use(bodyParser.json());
 app.use( express.static( "public" ));
 app.use('/router', userRouter);
 
+//database connection
 var mongoURI = "mongodb://localhost:27017/petDB";
 var MongoDB = mongoose.connect(mongoURI).connection;
 
+//server
 app.listen('3000', function(){
   console.log('listening on 3000');
 });

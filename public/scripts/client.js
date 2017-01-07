@@ -21,10 +21,10 @@ myApp.controller('Hoth', ['$scope', '$http', function($scope, $http){
     }).then(function(response){
       console.log('POST response: ', response);
     });//end $http
-    // $scope.petName='';
-    // $scope.petType='';
-    // $scope.petAge='';
-    // $scope.petImg='';
+    $scope.petName='';
+    $scope.petType='';
+    $scope.petAge='';
+    $scope.petImg='';
   }; //end $scope.submit
 
 
