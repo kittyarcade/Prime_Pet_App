@@ -10,6 +10,4 @@ myApp.controller('Hoth', ['$scope', '$http', function($scope, $http){
 
 
 
-
-
 }]); //end hoth controller
