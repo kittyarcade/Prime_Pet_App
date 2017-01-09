@@ -1,21 +1,18 @@
-body {
-  text-align: center;
-  font-family: sans-serif;
-  
-}
-
-h1 {
+.jumbotron{
+  background-color: #cdaae6 !important;
   font-size: 60px;
-  background-color: rgb(209, 195, 235);
-  padding: 40px;
-  margin: auto;
+  text-align: center;
 }
 
-.md-button{
-  background-color: rgb(171, 124, 185);
-  border-radius: 4px;
+.container {
+  text-align: center;
 }
 
-.md-button:not([disabled]):hover{
-  background-color: rgb(209, 195, 235);
+.output {
+  text-align: center;
+  padding: 10px;
+}
+
+.form-group {
+  text-align: center;
 }
