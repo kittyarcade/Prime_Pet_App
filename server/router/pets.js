@@ -14,10 +14,21 @@ router.post('/', function(req, res){
   });
   postPet.save(function(err){
     if(err){
-      console.log('POST: ', 500);
+      res.sendStatus(500);
     } else {
-      console.log('POST: ', 200);
       res.send('pet added');
+    }
+  });
+});
+
+router.delete('/', function(req,res){
+  console.log('Delete hit ', req.body.id);
+  User.remove({_id: req.body.id}, function(err){
+    if(err){
+      console.log(err);
+      res.sendStatus(500);
+    } else{
+      res.send('deleted!');
     }
   });
 });

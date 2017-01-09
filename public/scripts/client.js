@@ -1,6 +1,6 @@
 console.log('meow.js');
 
-var myApp = angular.module('myApp', ['ngMaterial']);
+var myApp = angular.module('myApp', []);
 
 myApp.controller('Hoth', ['$scope', '$http', function($scope, $http){
   console.log('totally angular dude');
@@ -34,6 +34,17 @@ myApp.controller('Hoth', ['$scope', '$http', function($scope, $http){
     clearForms();
     $scope.find();
   }; //end $scope.submit
+
+  $scope.delete = function(petId){
+    $http({
+      method: 'DELETE',
+      url: '/router',
+      data: {petId: pet._id}
+    }).then(function(response){
+      console.log('Delete success: ', response);
+      $scope.find();
+    });
+  };
 
   //clears input fields
   var clearForms = function(){
