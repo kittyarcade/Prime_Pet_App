@@ -16,3 +16,8 @@
 .form-group {
   text-align: center;
 }
+
+#outputText{
+  margin: auto;
+  padding: 10px;
+}

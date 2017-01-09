@@ -17,6 +17,7 @@
     <div ng-controller='Hoth'>
       <div class ='container'>
       <div class='jumbotron'>Pets! Pets! Pets!</div>
+      <p>A place  to store all your pet records.<p>
         <h3>Enter information about pet:</h3>
         <div class = 'form-group'>
         <input type="text"  class='form-control' placeholder='Name of Pet' ng-model='petName'></input>
@@ -33,11 +34,13 @@
         <button class= 'btn btn-info btn-block' ng-click='submit()'>Submit Pet Info</button>
       </div>
         <div class='output' ng-repeat ='pet in collection'>
+          <div class="col-md-4" id='outputText'>
           <img height='300' width='auto' class = '.img-responsive' ng-src="{{pet.Image}}"/>
           <p>{{pet.Name}}</p>
           <p>{{pet.Animal}}</p>
           <p>{{pet.Age}} years old</p>
           <button class='btn btn-danger' ng-click='deletePet(pet._id)'>Delete</button>
+        </div>
         </div>
     </div>
   </body>
