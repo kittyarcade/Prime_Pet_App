@@ -35,11 +35,11 @@ myApp.controller('Hoth', ['$scope', '$http', function($scope, $http){
     $scope.find();
   }; //end $scope.submit
 
-  $scope.delete = function(petId){
+  $scope.deletePet = function(petId){
     $http({
       method: 'DELETE',
-      url: '/router',
-      data: {petId: pet._id}
+      url: '/router/' + petId
+      // data: {petId: petId}
     }).then(function(response){
       console.log('Delete success: ', response);
       $scope.find();

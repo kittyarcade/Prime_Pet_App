@@ -21,9 +21,9 @@ router.post('/', function(req, res){
   });
 });
 
-router.delete('/', function(req,res){
-  console.log('Delete hit ', req.body.petId);
-  User.remove({_id: req.body.petId}, function(err){
+router.delete('/:id', function(req,res){
+  console.log('Delete hit ', req.params.id);
+  User.remove({_id: req.params.id}, function(err){
     if(err){
       console.log(err);
       res.sendStatus(500);
