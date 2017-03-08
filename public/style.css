@@ -6,18 +6,20 @@
 
 .container {
   text-align: center;
-}
-
-.output {
-  text-align: center;
-  padding: 10px;
+  margin: auto;
+  margin-bottom: 40px;
 }
 
 .form-group {
   text-align: center;
 }
 
-#outputText{
-  margin: auto;
-  padding: 10px;
+.yes{
+  margin-left: 120px;
+  display: inline-block;;
+}
+
+img {
+  width: 300px;
+  height: auto;
 }

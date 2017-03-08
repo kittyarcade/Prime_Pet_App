@@ -33,13 +33,21 @@
         </div>
         <button class= 'btn btn-info btn-block' ng-click='submit()'>Submit Pet Info</button>
       </div>
-        <div class='output' ng-repeat ='pet in collection'>
-          <div class="col-md-4" id='outputText'>
-          <img height='300' width='auto' class = '.img-responsive' ng-src="{{pet.Image}}"/>
-          <p>{{pet.Name}}</p>
-          <p>{{pet.Animal}}</p>
-          <p>{{pet.Age}} years old</p>
+        <div ng-repeat ='pet in collection'>
+          <div class='yes'>
+          <div class="col-md-12">
+          <table class='table table-striped'>
+            <tbody>
+              <tr>
+          <img class = 'img-responsive' ng-src="{{pet.Image}}"/>
+          {{pet.Name}},
+          {{pet.Animal}},
+          {{pet.Age}} years old
           <button class='btn btn-danger' ng-click='deletePet(pet._id)'>Delete</button>
+        </tr>
+        </tbody>
+        </table>
+        </div>
         </div>
         </div>
     </div>
